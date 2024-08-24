@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "stopwatch_backend": {
+      "main": "src/stopwatch_backend/main.mo",
+      "type": "motoko"
+    },
+    "stopwatch_frontend": {
+      "dependencies": [
+        "stopwatch_backend"
+      ],
+      "source": [
+        "src/stopwatch_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "stopwatch_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
