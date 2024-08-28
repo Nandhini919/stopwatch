@@ -1,10 +1,8 @@
- { useState } from 'react';
- { stopwatch_backend } from 'declarations/stopwatch_backend';
+import { useState } from 'react';
+import { stopwatch_backend } from 'declarations/stopwatch_backend';
 
-function App() {
-   React, { useState, useEffect } from 'react';
 
-  const Stopwatch = () => {
+  const App = () => {
     const [time, setTime] = useState(0);
     const [isRunning, setIsRunning] = useState(false);
     const [intervalId, setIntervalId] = useState(null);
@@ -46,6 +44,6 @@ function App() {
     );
   };
   
-  export default Stopwatch;
+  export default App;
    
-}
+
